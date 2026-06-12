@@ -1,0 +1,99 @@
+/* นำเข้าฟอนต์ Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Mitr:wght@400;500;600&display=swap');
+/* จัดการหน้าจอทั้งหมดให้อยู่ตรงกลาง */
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #fff1f2; /* เปลี่ยนเป็นสีพื้นหลังชมพูอ่อนพาสเทล */
+    margin: 0;
+    
+    /* สั่งให้เนื้อหาหลักเรียงกันเป็นเส้นตรงลงมาตรงกลางจอ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+    /* ล็อกระยะห่างจากขอบด้านบนให้คงที่ที่ 80px */
+    padding: 80px 0 0 0;
+    
+    /* จัดระยะตำแหน่งของข้อความสูตรคูณที่โผล่ขึ้นมา */
+    line-height: 1.8;
+    font-size: 18px;
+    color: #4c0519; /* เปลี่ยนสีตัวอักษรผลลัพธ์เป็นน้ำตาลอมชมพูเข้ม */
+}
+
+/* หัวข้อหลัก */
+h1 {
+    color: #9d174d; /* เปลี่ยนเป็นสีชมพูเข้มจัด */
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+/* ลิงก์ While Loop */
+a {
+    display: inline-block;
+    border: 1.5px solid #ec4899; /* เปลี่ยนขอบเป็นสีชมพูสด */
+    color: #ec4899; /* เปลี่ยนตัวหนังสือเป็นสีชมพูสด */
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 25px;
+    transition: all 0.2s;
+}
+
+/* ลูกเล่นเวลาเอาเมาส์ไปชี้ลิงก์ */
+a:hover {
+    background-color: #ec4899;
+    color: white;
+}
+
+/* ฟอร์ม */
+form {
+    margin-bottom: 25px;
+    display: block;
+}
+
+/* ตัวหนังสือ "แม่สูตรคูณ" */
+label {
+    font-size: 16px;
+    color: #831843; /* เปลี่ยนเป็นสีชมพูเข้ม */
+    font-weight: bold;
+}
+
+/* ช่องกรอกตัวเลข */
+input[type="number"] {
+    padding: 10px 15px;
+    border: 1px solid #fbcfe8; /* เปลี่ยนขอบอินพุตเป็นสีชมพูอ่อน */
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+    outline: none;
+    margin-top: 8px;
+}
+
+/* สีกรอบตอนที่กดคลิกเลือกช่องกรอก */
+input[type="number"]:focus {
+    border-color: #f472b6;
+    box-shadow: 0 0 0 2px #fce7f3;
+}
+
+/* ปุ่มกดคำนวณ */
+input[type="submit"] {
+    background-color: #db2777; /* เปลี่ยนปุ่มเป็นสีชมพูบานเย็น */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.2s;
+}
+
+/* ลูกเล่นเวลาเอาเมาส์ไปชี้ปุ่ม */
+input[type="submit"]:hover {
+    background-color: #be185d; /* สีชมพูจะเข้มขึ้นเมื่อเขยิบเมาส์ไปโดน */
+}
